@@ -81,10 +81,10 @@ Profissoes: {
 ```
 
 __________
-### Objeto que tenham mais de um campo
+### Objeto que tenham mais de um campo/Campos aninhados
 Esse Tipo de input é gerado pelo seguinte formato json:
 
-**Exemplo adicionando o campo Endereço**
+**Exemplo adicionando o campo aninhado de Endereço**
 ```javascript
 export const myFields = {
     Endereco: {
