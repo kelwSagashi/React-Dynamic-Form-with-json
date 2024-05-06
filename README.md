@@ -168,7 +168,7 @@ function App() {
 }
 ```
 
-## Stack utilizada
+## Tecnologias usadas
 
 **Front-end:** React, css, axios
 
