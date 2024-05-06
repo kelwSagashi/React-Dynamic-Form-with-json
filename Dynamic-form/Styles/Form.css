@@ -1,0 +1,227 @@
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 5px #ccc;
+    border-radius: 5px;
+    width: auto;
+    color: black;
+}
+
+.input-area{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.form-input{
+    width: 100%;
+    padding: 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    height: 40px;
+}
+
+/* .form-input.file{
+    background-color: #4CAF50; 
+    color: white;              
+    cursor: pointer;           
+    &:hover {
+        background-color: #45a049;
+    }
+} 
+*/
+.form-button-add{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #1bb93e;
+    color: white;
+    height: 42px;
+}
+
+.form-button-cancel{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #818181;
+    color: white;
+    height: 42px;
+}
+
+.form-button-delete{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #b91b1b;
+    color: white;
+    height: 42px;
+}
+
+.form-button-save{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #5381ff;
+    color: white;
+    height: 42px;
+}
+
+.form-button-refresh{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #818181;
+    color: white;
+    height: 42px;
+}
+
+.form-field{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 10px;
+    padding-block: 10px;
+}
+
+.form-field-buttons{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    gap: 10px;
+    padding-block: 10px;
+    justify-content: space-around;
+}
+
+.form-label{
+    width: 40%;
+    align-self: center;
+    transition: color .2s ease-in-out;
+}
+
+.form-expand-button{
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.form-hellip{
+    outline: 1px solid #818181;
+    border-radius: 5px;
+    padding-inline: 5px;
+}
+.form-hellip.active {
+    display: none;
+}
+
+.sub-form-field{
+    display: inline-flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.especial-form-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-arrow {
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(0deg);
+}
+
+@keyframes rotateArrow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
+}
+
+.form-arrow.active {
+    animation: rotateArrow 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.select-form{
+    display: flex;
+}
+
+.form-option{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.form-file-drop-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    width: 100%;
+}
+
+.form-file-drop-container:hover {
+    background: #eee;
+    border-color: #111;
+}
+
+.form-file-drop-container:hover .form-file-drop-title {
+    color: #222;
+}
+
+.form-file-drop-title {
+    color: #444;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+.form-file-input{
+    color: #444;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #555;
+}
+
+.form-file-input::file-selector-button{
+    border: none;
+    background: #084cdf;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+}
+
+.form-file-input::file-selector-button:hover {
+    background: #0d45a5;
+}
+
+.action-buttons-container {
+    display: inline-flex;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;    
+    position: relative;
+    right: 20px;
+}
